@@ -1,0 +1,15 @@
+.card__component{
+    @apply bg-neutral-veryLightGray overflow-hidden rounded-md shadow-lg px-5 pt-5 pb-12 h-60 w-full lg:w-72 relative;
+
+
+
+    header{
+        @apply font-[500]
+    }
+    p{
+        @apply text-xs text-neutral-veryDarkBlue text-[300];
+    }
+    img{
+        @apply absolute h-20 bottom-0 right-0  -translate-x-5 -translate-y-5;
+    }
+}

@@ -1,0 +1,15 @@
+.App{
+    @apply min-h-screen bg-neutral-veryLightGray p-14 font-poppins;
+
+    h1{
+        @apply font-[200] text-neutral-veryDarkBlue text-[1.7rem] text-center ;
+    }
+    h2{
+        @apply font-semibold mb-3 text-neutral-veryDarkBlue text-[1.7rem] text-center ;
+    }
+    .main__slogan{
+        @apply text-[0.7rem] mb-12 text-center text-neutral-veryDarkBlue font-light;
+    }
+
+    
+}
