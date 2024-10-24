@@ -11,7 +11,7 @@ export const Card = ({ children , className="",icon }: CardProps) => {
   return (
     <section className={'card__component '+className}>
       {children}
-      <img src={icon} />
+      <img src={icon} alt="icons"/>
     </section>
   )
 }

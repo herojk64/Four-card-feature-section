@@ -8,8 +8,8 @@ import TeamBulder from './assets/icon-team-builder.svg'
 function App() {
   return (
     <div className='App'>
-      <h1>Reliable, efficient delivery</h1>
-      <h2>Powered by Technology</h2>
+      <h1 role="main heading">Reliable, efficient delivery</h1>
+      <h2 role="secondary heading">Powered by Technology</h2>
 
       <p className='main__slogan'>Our Artificial Intelligence powered tools use millions of project data<br /> points
         to ensure that your project is successful</p>
