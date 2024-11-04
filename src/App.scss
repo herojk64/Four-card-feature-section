@@ -1,15 +1,92 @@
-.App{
-    @apply min-h-screen bg-neutral-veryLightGray p-14 font-poppins;
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url('./fonts/Roboto-Regular.ttf');
+}
 
-    h1{
-        @apply font-[200] text-neutral-veryDarkBlue text-[1.7rem] text-center ;
-    }
-    h2{
-        @apply font-semibold mb-3 text-neutral-veryDarkBlue text-[1.7rem] text-center ;
-    }
-    .main__slogan{
-        @apply text-[0.7rem] mb-12 text-center text-neutral-veryDarkBlue font-light;
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url('./fonts/Roboto-Bold.ttf');
+}
+
+.App {
+    @apply min-h-screen bg-white lg:bg-charcoal-grey lg:flex lg:items-center justify-center;
+    font-family: 'Roboto-Regular';
+
+    .card__wrapper {
+        @apply text-[0.9rem] lg:p-4 lg:rounded-2xl lg:gap-4 lg:grid lg:grid-cols-[53%,auto] lg:w-1/2 bg-white text-dark-slate-grey;
+
+        img {
+            @apply max-h-72 lg:max-h-none object-cover lg:h-full lg:rounded-xl lg:w-full;
+        }
+
+        section {
+            @apply col-start-1 row-start-1 p-6 lg:px-2 lg:py-5;
+
+            h1 {
+                @apply text-3xl font-bold mb-6;
+                font-family: "Roboto-Bold";
+            }
+
+            p {
+                @apply mb-5;
+            }
+
+            .info__list {
+                @apply space-y-3 mb-12;
+
+                div {
+                    @apply flex gap-4 before:content-['_'] before:bg-[url('./assets/icon-list.svg')] bg-contain bg-[0.75rem_0.75rem] before:w-6 before:h-6;
+
+                    &:before {
+                        background-repeat: no-repeat;
+                    }
+                }
+
+
+            }
+
+            form {
+                label {
+                    @apply text-xs font-bold flex justify-between mb-2;
+
+                    span[data-error='true'] {
+                        @apply text-red-400 transition delay-75 opacity-100;
+                    }
+                }
+
+                input {
+                    @apply border rounded-lg focus-within:outline-0 border-grey border-opacity-50 py-2 px-4 w-full mb-5 hover:border-opacity-90 hover:shadow-sm transition ease-out delay-75;
+
+                    &[data-error='true'] {
+                        @apply border-red-500 bg-red-300 text-red-500 focus-within:outline-0 bg-opacity-50;
+                    }
+                }
+
+                button {
+                    @apply text-center block w-full bg-charcoal-grey text-white rounded-md py-4 transition delay-100 ease-in-out hover:bg-gradient-to-r hover:from-pink-400 hover:from-10% hover:via-orange-400 hover:to-orange-600;
+                }
+            }
+        }
     }
 
-    
+    .step__second__card{
+        @apply bg-white rounded-2xl p-10 w-min min-w-96;
+
+        img{
+            @apply mb-8
+        }
+
+        h1{
+            @apply text-4xl font-bold mb-7;
+        }
+
+        p{
+            @apply text-xs mb-8;
+        }
+
+        button {
+            @apply text-center block w-full bg-charcoal-grey text-white rounded-md py-4 transition delay-100 ease-in-out hover:bg-gradient-to-r hover:from-pink-400 hover:from-10% hover:via-orange-400 hover:to-orange-600;
+        }
+    }
+
 }
